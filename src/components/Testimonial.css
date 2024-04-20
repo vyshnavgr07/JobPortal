@@ -1,0 +1,19 @@
+/* Style the individual dot */
+.slick-dots button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #e91437; /* Change the background color */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    margin: 0 8px; /* Adjust margin between dots */
+    transition: background-color 0.3s ease; /* Add transition effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add box shadow for depth */
+  }
+  
+  /* Style the active dot */
+  .slick-dots button.slick-active {
+    background-color: #fff; /* Change the background color of active dot */
+    box-shadow: 0 0 6px rgba(85, 33, 218, 0.5); /* Add stronger box shadow for active dot */
+  }
+  

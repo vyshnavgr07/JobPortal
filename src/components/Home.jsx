@@ -1,17 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Nav from './Nav'
 import client from "../assets/Clientimage.jpg"
 import Navbar from './Navbar'
 import "./Home.css"
 import { BsFillSuitcaseLgFill } from "react-icons/bs";
 import Countup from './Countup'
+import CountUp from 'react-countup'
+import ScrollTrigger from "react-scroll-trigger";
 const Home = () => {
+  const [counterOn, setcounteron]=useState(false)
   return (
    <> 
    
   <Navbar/>
 
-<div className='flex pt-5 90vh bg-slate-600  ' >
+<div className='flex pt-5 90v ' style={{backgroundColor:'#F8F8FF'}}>
 
     <div className=' w-2/3 '>
         <h1 className='text-6xl'>Find a employee that suits your interest.</h1>
@@ -38,67 +41,27 @@ in scelerisque leo, eget sollicitudin velit bestibulum.</h6>
 
 {/* count up */}
 
-<div className='flex pt-8'>
-
-<div class="w-6/12 max-w-full px-3 text-center lg:w-3/12">
-  <div class="py-4 border border-rounded-lg border-gray-300 bg-gradient-to-br from-zinc-400-300-200 to-yellow-100 shadow-md">
-  <div class="flex items-center justify-center">
-    <h4 class="font-bold text-4xl dark:text-blue-600">
-        <Countup/>
-      </h4>
-    </div>
-    <h6 class="relative mb-2 text-transparent z-1 bg-clip-text bg-gradient-to-tl from-purple-700 to-pink-500 text-lg font-semibold tracking-wide">Jobs</h6>
-   
-  </div>
-</div>
-<div class="w-6/12 max-w-full px-3 text-center lg:w-3/12">
-  <div class="py-4 border border-rounded-lg border-gray-300 bg-gradient-to-br from-yellow-200 to-yellow-100 shadow-md">
-  <div class="flex items-center justify-center">
-      <h4 class="font-bold text-4xl dark:text-blue-600">
-        <Countup/>
-      </h4>
-    </div>
-    <h6 class="relative mb-2 text-transparent z-1 bg-clip-text bg-gradient-to-tl from-purple-700 to-pink-500 text-lg font-semibold tracking-wide">Profesional</h6>
-   
-  </div>
+<div className='mt-20'>
+<Countup/>
 </div>
 
-<div class="w-6/12 max-w-full px-3 text-center lg:w-3/12">
-  <div class="py-4 border border-rounded-lg border-gray-300 bg-gradient-to-br from-yellow-200 to-yellow-100 shadow-md">
-  <div class="flex items-center justify-center">
-      <h4 class="font-bold text-4xl dark:text-blue-600">
-        <Countup/>
-      </h4>
-    </div>
-    <h6 class="relative mb-2 text-transparent z-1 bg-clip-text bg-gradient-to-tl from-purple-700 to-pink-500 text-lg font-semibold tracking-wide">Revenue</h6>
-    
-  </div>
-</div>
 
-<div class="w-6/12 max-w-full px-3 text-center lg:w-3/12">
-  <div class="py-4 border border-rounded-lg border-gray-300 bg-gradient-to-br from-yellow-200 to-yellow-100 shadow-md">
-  <div class="flex items-center justify-center">
-      <h4 class="font-bold text-4xl dark:text-blue-600">
-        <Countup/>
-      </h4>
-    </div>
-    <h6 class="relative mb-2 text-transparent z-1 bg-clip-text bg-gradient-to-tl from-purple-700 to-pink-500 text-lg font-semibold tracking-wide">Refund</h6>
-  
-  </div>
-</div>
 
-</div>
+
+
+
+
 
 
 
 {/* popular Vaccancy */}
-<div className='mt-10 bg-orange-200  w-full ' >
+<div className='mt-10  w-full ' >
   <h1 className='text-start text-6xl pb-5' >Most Popular Vaccancy</h1>
   <div  className='  flex flex-wrap justify-between'>
 
 
 {[...Array(16)].map((x)=>(
- <div className=' h-20 w-60   p-2 m-3 bg-slate-50 hover:bg-slate-700'>
+ <div className=' h-20 w-60   p-2 m-3 bg-slate-50 hover:bg-slate-700  shadow-xl'>
  <p className='font-bold'>Painter</p>
  <p className=''>45904 available</p>
 </div>
