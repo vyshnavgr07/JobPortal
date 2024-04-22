@@ -7,6 +7,7 @@ import { BsFillSuitcaseLgFill } from "react-icons/bs";
 import Countup from './Countup'
 import CountUp from 'react-countup'
 import ScrollTrigger from "react-scroll-trigger";
+import Home2 from './Home2'
 const Home = () => {
   const [counterOn, setcounteron]=useState(false)
   return (
@@ -56,7 +57,7 @@ in scelerisque leo, eget sollicitudin velit bestibulum.</h6>
 
 {/* popular Vaccancy */}
 <div className='mt-10  w-full ' >
-  <h1 className='text-start text-6xl pb-5' >Most Popular Vaccancy</h1>
+  <h1 className='text-center text-6xl pb-5' >Most Popular Vaccancy</h1>
   <div  className='  flex flex-wrap justify-between'>
 
 
@@ -70,7 +71,7 @@ in scelerisque leo, eget sollicitudin velit bestibulum.</h6>
   </div>
 </div>
 
-
+<Home2/>
 </>
   )
 }

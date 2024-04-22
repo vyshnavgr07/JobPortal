@@ -11,6 +11,7 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
+import Login from './Login'
 
 
 const Home2 = () => {
@@ -40,7 +41,7 @@ const Home2 = () => {
 </div>
 <Testimonial/>
 
-<div className='flex  mt-10 mb-10 '>
+<div className='flex  mt-10 mb-10  lg:flex-direction: column; '>
 
   <div className='m-5'>
   <Card className="w-full max-w-[48rem] flex-row">
@@ -91,7 +92,7 @@ const Home2 = () => {
   </div>
 
 
-  <div  className='m-5'>
+  <div  className='m-5 '>
   <Card className="w-full max-w-[48rem] flex-row">
       <CardHeader
         shadow={false}
@@ -145,6 +146,8 @@ const Home2 = () => {
 
 
 <Footer/>
+
+
    </>
   )
 }
